@@ -16,6 +16,7 @@
   --coral: var(--red);
   --white: #ffffff;
   --shadow: 0 24px 70px rgba(13, 31, 74, 0.16);
+  --mark: url("assets/Frame 2136139202.svg");
 }
 
 * {
@@ -151,6 +152,7 @@ h1 {
 
 .intro {
   position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(260px, 0.9fr) minmax(280px, 1.1fr);
   gap: clamp(28px, 6vw, 82px);
@@ -160,12 +162,30 @@ h1 {
 .intro::before {
   content: "";
   position: absolute;
-  top: 28px;
+  top: 36px;
   right: clamp(20px, 6vw, 78px);
-  width: 150px;
-  height: 150px;
-  border: 2px dashed rgba(23, 42, 98, 0.22);
-  border-radius: 50%;
+  width: 118px;
+  height: 114px;
+  background: var(--mark) center / contain no-repeat;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  left: clamp(18px, 5vw, 62px);
+  bottom: 26px;
+  width: 74px;
+  height: 72px;
+  background: var(--mark) center / contain no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.intro > * {
+  position: relative;
+  z-index: 1;
 }
 
 h2 {
@@ -235,10 +255,41 @@ h2 {
 }
 
 .framework {
+  position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(280px, 0.95fr) minmax(300px, 1.05fr);
   gap: clamp(32px, 6vw, 78px);
   align-items: start;
+}
+
+.framework::before,
+.framework::after {
+  content: "";
+  position: absolute;
+  background: var(--mark) center / contain no-repeat;
+  pointer-events: none;
+}
+
+.framework::before {
+  top: 42px;
+  right: clamp(28px, 9vw, 130px);
+  width: 96px;
+  height: 93px;
+  opacity: 0.11;
+}
+
+.framework::after {
+  left: clamp(22px, 6vw, 80px);
+  bottom: 36px;
+  width: 68px;
+  height: 66px;
+  opacity: 0.08;
+}
+
+.framework > * {
+  position: relative;
+  z-index: 1;
 }
 
 .steps {
@@ -272,10 +323,21 @@ h2 {
   position: absolute;
   top: 52px;
   right: clamp(22px, 7vw, 92px);
-  width: 230px;
-  height: 230px;
-  border: 2px dashed rgba(23, 42, 98, 0.2);
-  border-radius: 50%;
+  width: 126px;
+  height: 122px;
+  background: var(--mark) center / contain no-repeat;
+  opacity: 0.16;
+}
+
+.formats::after {
+  content: "";
+  position: absolute;
+  left: clamp(20px, 4vw, 58px);
+  bottom: 52px;
+  width: 86px;
+  height: 83px;
+  background: var(--mark) center / contain no-repeat;
+  opacity: 0.08;
 }
 
 .formats > * {
@@ -327,15 +389,15 @@ h2 {
 .pricing-card::before {
   content: "";
   position: absolute;
-  top: -60px;
-  right: -52px;
-  width: 146px;
-  height: 146px;
-  border: 2px dashed color-mix(in srgb, var(--plan-color) 52%, transparent);
-  border-radius: 50%;
+  top: 18px;
+  right: 18px;
+  width: 58px;
+  height: 56px;
+  background: var(--mark) center / contain no-repeat;
   opacity: 0;
   transform: scale(0.88);
   transition: opacity 180ms ease, transform 180ms ease;
+  pointer-events: none;
 }
 
 .pricing-card:hover,
@@ -408,10 +470,41 @@ h2 {
 }
 
 .request-section {
+  position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(280px, 0.85fr) minmax(320px, 1.15fr);
   gap: clamp(30px, 6vw, 82px);
   background: var(--white);
+}
+
+.request-section::before,
+.request-section::after {
+  content: "";
+  position: absolute;
+  background: var(--mark) center / contain no-repeat;
+  pointer-events: none;
+}
+
+.request-section::before {
+  top: 48px;
+  left: clamp(20px, 5vw, 72px);
+  width: 76px;
+  height: 74px;
+  opacity: 0.09;
+}
+
+.request-section::after {
+  right: clamp(18px, 6vw, 80px);
+  bottom: 34px;
+  width: 118px;
+  height: 114px;
+  opacity: 0.1;
+}
+
+.request-section > * {
+  position: relative;
+  z-index: 1;
 }
 
 .request-form {

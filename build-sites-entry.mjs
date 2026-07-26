@@ -1,9 +1,12 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const html = await readFile("index.html", "utf8");
-const css = await readFile("styles.css", "utf8");
+const rawCss = await readFile("styles.css", "utf8");
 const js = await readFile("script.js", "utf8");
 const hero = await readFile("assets/cultural-intelligence-hero.jpg");
+const mark = await readFile("assets/Frame 2136139202.svg", "utf8");
+const markDataUri = `data:image/svg+xml,${encodeURIComponent(mark)}`;
+const css = rawCss.replaceAll("assets/Frame 2136139202.svg", markDataUri);
 
 const bundledHtml = html
   .replace('<link rel="stylesheet" href="styles.css" />', `<style>${css}</style>`)
