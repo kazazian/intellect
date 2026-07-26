@@ -167,7 +167,7 @@ h1 {
   width: 118px;
   height: 114px;
   background: var(--mark) center / contain no-repeat;
-  opacity: 0.16;
+  opacity: 0.72;
   pointer-events: none;
 }
 
@@ -179,7 +179,7 @@ h1 {
   width: 74px;
   height: 72px;
   background: var(--mark) center / contain no-repeat;
-  opacity: 0.08;
+  opacity: 0.42;
   pointer-events: none;
 }
 
@@ -276,7 +276,7 @@ h2 {
   right: clamp(28px, 9vw, 130px);
   width: 96px;
   height: 93px;
-  opacity: 0.11;
+  opacity: 0.5;
 }
 
 .framework::after {
@@ -284,7 +284,7 @@ h2 {
   bottom: 36px;
   width: 68px;
   height: 66px;
-  opacity: 0.08;
+  opacity: 0.38;
 }
 
 .framework > * {
@@ -326,7 +326,7 @@ h2 {
   width: 126px;
   height: 122px;
   background: var(--mark) center / contain no-repeat;
-  opacity: 0.16;
+  opacity: 0.72;
 }
 
 .formats::after {
@@ -337,7 +337,7 @@ h2 {
   width: 86px;
   height: 83px;
   background: var(--mark) center / contain no-repeat;
-  opacity: 0.08;
+  opacity: 0.4;
 }
 
 .formats > * {
@@ -491,7 +491,7 @@ h2 {
   left: clamp(20px, 5vw, 72px);
   width: 76px;
   height: 74px;
-  opacity: 0.09;
+  opacity: 0.42;
 }
 
 .request-section::after {
@@ -499,7 +499,7 @@ h2 {
   bottom: 34px;
   width: 118px;
   height: 114px;
-  opacity: 0.1;
+  opacity: 0.5;
 }
 
 .request-section > * {
