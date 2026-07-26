@@ -4,9 +4,14 @@ const html = await readFile("index.html", "utf8");
 const css = await readFile("styles.css", "utf8");
 const js = await readFile("script.js", "utf8");
 const hero = await readFile("assets/cultural-intelligence-hero.jpg");
+const petal = await readFile("assets/Frame 2136139202.svg");
+const cssWithAssets = css.replace(
+  'url("assets/Frame 2136139202.svg")',
+  `url("data:image/svg+xml;base64,${petal.toString("base64")}")`
+);
 
 const bundledHtml = html
-  .replace('<link rel="stylesheet" href="styles.css" />', `<style>${css}</style>`)
+  .replace('<link rel="stylesheet" href="styles.css" />', `<style>${cssWithAssets}</style>`)
   .replace(
     'src="assets/cultural-intelligence-hero.jpg"',
     `src="data:image/jpeg;base64,${hero.toString("base64")}"`

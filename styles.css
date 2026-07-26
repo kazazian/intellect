@@ -417,14 +417,13 @@ h2 {
 .pricing-card::before {
   content: "";
   position: absolute;
-  top: 14px;
-  right: 14px;
-  width: 104px;
-  height: 100px;
-  border: 2px dashed color-mix(in srgb, var(--plan-color) 52%, transparent);
-  border-radius: 50%;
+  top: 18px;
+  right: 18px;
+  width: 88px;
+  height: 86px;
+  background: url("assets/Frame 2136139202.svg") center / contain no-repeat;
   opacity: 0;
-  transform: scale(0.88);
+  transform: rotate(-8deg) scale(0.9);
   transition: opacity 180ms ease, transform 180ms ease;
   pointer-events: none;
 }
@@ -439,7 +438,7 @@ h2 {
 .pricing-card:hover::before,
 .pricing-card:focus-within::before {
   opacity: 1;
-  transform: scale(1);
+  transform: rotate(0deg) scale(1);
 }
 
 .tag {
