@@ -163,10 +163,10 @@ h1 {
 .intro::before {
   content: "";
   position: absolute;
-  top: 18px;
-  right: clamp(10px, 5vw, 64px);
-  width: 238px;
-  height: 230px;
+  top: -96px;
+  right: clamp(-64px, -2vw, -18px);
+  width: 430px;
+  height: 416px;
   border: 2px dashed rgba(196, 211, 241, 0.62);
   border-radius: 50%;
   opacity: 1;
@@ -176,10 +176,10 @@ h1 {
 .intro::after {
   content: "";
   position: absolute;
-  left: clamp(18px, 5vw, 62px);
-  bottom: 18px;
-  width: 168px;
-  height: 162px;
+  left: clamp(-70px, -3vw, -24px);
+  bottom: -94px;
+  width: 360px;
+  height: 348px;
   border: 2px dashed rgba(196, 211, 241, 0.34);
   border-radius: 50%;
   opacity: 1;
@@ -509,10 +509,10 @@ h2 {
 }
 
 .request-section::before {
-  top: 28px;
-  left: clamp(16px, 4vw, 58px);
-  width: 184px;
-  height: 178px;
+  top: -72px;
+  left: clamp(-76px, -3vw, -26px);
+  width: 376px;
+  height: 364px;
   opacity: 1;
 }
 
