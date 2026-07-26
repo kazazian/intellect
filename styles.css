@@ -166,45 +166,6 @@ h1 {
   background: rgba(255, 255, 255, 0.12);
 }
 
-.quick-facts {
-  padding: 0 clamp(20px, 6vw, 78px);
-  background: var(--white);
-}
-
-.quick-facts dl {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  width: 100%;
-  max-width: 1180px;
-  margin: -48px auto 0;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--line);
-  box-shadow: var(--shadow);
-}
-
-.quick-facts div {
-  padding: 22px;
-  background: var(--white);
-}
-
-dt {
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-dd {
-  margin: 6px 0 0;
-  font-size: 17px;
-  font-weight: 800;
-}
-
 .section {
   padding: clamp(56px, 8vw, 104px) clamp(20px, 6vw, 78px);
 }
@@ -485,11 +446,6 @@ textarea:focus {
 
   h1 {
     font-size: 38px;
-  }
-
-  .quick-facts dl {
-    grid-template-columns: 1fr;
-    margin-top: -26px;
   }
 
   .hero-actions,

@@ -3,13 +3,13 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const html = await readFile("index.html", "utf8");
 const css = await readFile("styles.css", "utf8");
 const js = await readFile("script.js", "utf8");
-const hero = await readFile("assets/cultural-intelligence-hero.png");
+const hero = await readFile("assets/cultural-intelligence-hero.jpg");
 
 const bundledHtml = html
   .replace('<link rel="stylesheet" href="styles.css" />', `<style>${css}</style>`)
   .replace(
-    'src="assets/cultural-intelligence-hero.png"',
-    `src="data:image/png;base64,${hero.toString("base64")}"`
+    'src="assets/cultural-intelligence-hero.jpg"',
+    `src="data:image/jpeg;base64,${hero.toString("base64")}"`
   )
   .replace('<script src="script.js"></script>', `<script>${js}</script>`);
 
