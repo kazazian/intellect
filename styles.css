@@ -423,10 +423,10 @@ h2 {
 .pricing-card::before {
   content: "";
   position: absolute;
-  top: 18px;
-  right: 18px;
-  width: 88px;
-  height: 86px;
+  top: 16px;
+  right: 16px;
+  width: 62px;
+  height: 60px;
   background: url("assets/Frame 2136139202.svg") center / contain no-repeat;
   opacity: 0;
   transform: rotate(-8deg) scale(0.9);
