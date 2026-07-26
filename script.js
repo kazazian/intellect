@@ -2,7 +2,7 @@ const form = document.querySelector("#request-form");
 const planSelect = form.querySelector("select[name='plan']");
 const note = document.querySelector("#form-note");
 const submitButton = form.querySelector(".submit-button");
-const GOOGLE_SCRIPT_URL = "";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzRG7SnsPj6mfIqomCGIBM4yvFAa2H3kil8So0_5bFtGp-f3QhnXqx3mC9dIPBFpKs2/exec";
 
 document.querySelectorAll("[data-plan] .card-button").forEach((button) => {
   button.addEventListener("click", (event) => {
