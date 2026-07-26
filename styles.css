@@ -2,7 +2,7 @@
   color-scheme: light;
   --ink: #111d30;
   --muted: #596578;
-  --line: rgba(196, 211, 241, 0.3);
+  --line: #c4d3f1;
   --paper: #f4f8ff;
   --soft: #eaf1fb;
   --blue: #172a62;
@@ -18,7 +18,6 @@
   --coral: var(--red);
   --white: #ffffff;
   --shadow: 0 24px 70px rgba(3, 8, 25, 0.24);
-  --mark: url("assets/Frame 2136139202.svg");
 }
 
 * {
@@ -168,8 +167,9 @@ h1 {
   right: clamp(20px, 6vw, 78px);
   width: 118px;
   height: 114px;
-  background: var(--mark) center / contain no-repeat;
-  opacity: 0.78;
+  border: 2px dashed rgba(196, 211, 241, 0.62);
+  border-radius: 50%;
+  opacity: 1;
   pointer-events: none;
 }
 
@@ -180,8 +180,9 @@ h1 {
   bottom: 26px;
   width: 74px;
   height: 72px;
-  background: var(--mark) center / contain no-repeat;
-  opacity: 0.48;
+  border: 2px dashed rgba(196, 211, 241, 0.34);
+  border-radius: 50%;
+  opacity: 1;
   pointer-events: none;
 }
 
@@ -221,7 +222,7 @@ h2 {
 .use-cases article {
   min-height: 240px;
   padding: 30px;
-  border: 1px dashed rgba(255, 255, 255, 0.22);
+  border: 1px solid var(--line);
   background: #f8fbff;
   color: var(--ink);
 }
@@ -272,7 +273,8 @@ h2 {
 .framework::after {
   content: "";
   position: absolute;
-  background: var(--mark) center / contain no-repeat;
+  border: 2px dashed rgba(196, 211, 241, 0.4);
+  border-radius: 50%;
   pointer-events: none;
 }
 
@@ -281,7 +283,7 @@ h2 {
   right: clamp(28px, 9vw, 130px);
   width: 96px;
   height: 93px;
-  opacity: 0.62;
+  opacity: 1;
 }
 
 .framework::after {
@@ -289,7 +291,7 @@ h2 {
   bottom: 36px;
   width: 68px;
   height: 66px;
-  opacity: 0.48;
+  opacity: 1;
 }
 
 .framework > * {
@@ -304,7 +306,7 @@ h2 {
 
 .steps div {
   color: var(--ink);
-  border: 1px dashed rgba(23, 42, 98, 0.24);
+  border: 1px solid var(--line);
   border-left: 5px solid var(--blue);
   padding: 22px 24px;
   background: #f8fbff;
@@ -332,8 +334,9 @@ h2 {
   right: clamp(22px, 7vw, 92px);
   width: 126px;
   height: 122px;
-  background: var(--mark) center / contain no-repeat;
-  opacity: 0.86;
+  border: 2px dashed rgba(196, 211, 241, 0.58);
+  border-radius: 50%;
+  opacity: 1;
 }
 
 .formats::after {
@@ -343,8 +346,9 @@ h2 {
   bottom: 52px;
   width: 86px;
   height: 83px;
-  background: var(--mark) center / contain no-repeat;
-  opacity: 0.48;
+  border: 2px dashed rgba(196, 211, 241, 0.34);
+  border-radius: 50%;
+  opacity: 1;
 }
 
 .formats > * {
@@ -373,7 +377,7 @@ h2 {
   padding: 26px;
   overflow: hidden;
   color: var(--ink);
-  border: 1px solid rgba(196, 211, 241, 0.7);
+  border: 1px solid var(--line);
   border-radius: 8px;
   background: #f8fbff;
   transition:
@@ -401,7 +405,8 @@ h2 {
   right: 18px;
   width: 58px;
   height: 56px;
-  background: var(--mark) center / contain no-repeat;
+  border: 2px dashed color-mix(in srgb, var(--plan-color) 52%, transparent);
+  border-radius: 50%;
   opacity: 0;
   transform: scale(0.88);
   transition: opacity 180ms ease, transform 180ms ease;
@@ -490,7 +495,8 @@ h2 {
 .request-section::after {
   content: "";
   position: absolute;
-  background: var(--mark) center / contain no-repeat;
+  border: 2px dashed rgba(196, 211, 241, 0.38);
+  border-radius: 50%;
   pointer-events: none;
 }
 
@@ -499,7 +505,7 @@ h2 {
   left: clamp(20px, 5vw, 72px);
   width: 76px;
   height: 74px;
-  opacity: 0.48;
+  opacity: 1;
 }
 
 .request-section::after {
@@ -507,7 +513,7 @@ h2 {
   bottom: 34px;
   width: 118px;
   height: 114px;
-  opacity: 0.62;
+  opacity: 1;
 }
 
 .request-section > * {
@@ -520,7 +526,7 @@ h2 {
   gap: 16px;
   padding: 28px;
   color: var(--ink);
-  border: 1px dashed rgba(23, 42, 98, 0.26);
+  border: 1px solid var(--line);
   border-radius: 8px;
   background: #f8fbff;
 }
@@ -536,7 +542,7 @@ input,
 select,
 textarea {
   width: 100%;
-  border: 1px solid #cbd4ce;
+  border: 1px solid var(--line);
   border-radius: 6px;
   padding: 14px 15px;
   color: var(--ink);
