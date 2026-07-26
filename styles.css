@@ -516,10 +516,10 @@ h2 {
 }
 
 .request-section::before {
-  top: -72px;
-  left: clamp(-76px, -3vw, -26px);
-  width: 376px;
-  height: 364px;
+  top: 42px;
+  left: clamp(220px, 28vw, 440px);
+  width: 318px;
+  height: 308px;
   opacity: 1;
 }
 
@@ -627,6 +627,14 @@ textarea:focus {
   .framework {
     margin: 24px 20px;
     padding: 38px 22px;
+  }
+
+  .request-section::before {
+    top: 26px;
+    right: 18px;
+    left: auto;
+    width: 220px;
+    height: 214px;
   }
 
   .hero {
