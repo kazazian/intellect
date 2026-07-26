@@ -635,12 +635,15 @@ textarea:focus {
     padding: 38px 22px;
   }
 
-  .request-section::before {
-    top: 26px;
-    right: 18px;
-    left: auto;
-    width: 220px;
-    height: 214px;
+  .intro::before,
+  .intro::after,
+  .framework::before,
+  .framework::after,
+  .formats::before,
+  .formats::after,
+  .request-section::before,
+  .request-section::after {
+    display: none;
   }
 
   .hero {
