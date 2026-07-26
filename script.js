@@ -18,6 +18,7 @@ form.addEventListener("submit", (event) => {
     `Имя: ${data.get("name")}`,
     `Контакт: ${data.get("contact")}`,
     `Формат: ${data.get("plan")}`,
+    "Группа: от 6 до 10 человек",
     `Комментарий: ${data.get("message") || "Не указан"}`,
   ].join("\n");
 
