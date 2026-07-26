@@ -157,7 +157,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(260px, 0.9fr) minmax(280px, 1.1fr);
   gap: clamp(28px, 6vw, 82px);
-  background: linear-gradient(135deg, var(--blue) 0%, var(--blue-mid) 100%);
+  background: var(--blue);
 }
 
 .intro::before {
@@ -216,7 +216,7 @@ h2 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   padding-top: 0;
-  background: var(--blue-mid);
+  background: var(--blue);
 }
 
 .use-cases article {
@@ -332,7 +332,7 @@ h2 {
   overflow: hidden;
   background:
     radial-gradient(circle at 84% 12%, rgba(0, 155, 219, 0.22), transparent 26%),
-    linear-gradient(180deg, var(--blue), var(--blue-deep));
+    var(--blue);
 }
 
 .formats::before {
@@ -496,7 +496,7 @@ h2 {
   display: grid;
   grid-template-columns: minmax(280px, 0.85fr) minmax(320px, 1.15fr);
   gap: clamp(30px, 6vw, 82px);
-  background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid));
+  background: var(--blue);
 }
 
 .request-section::before,
