@@ -63,9 +63,8 @@ a {
 
 .hero-overlay {
   background:
-    radial-gradient(circle at 72% 35%, rgba(214, 163, 22, 0.28), transparent 20%),
-    linear-gradient(90deg, rgba(8, 17, 49, 0.9), rgba(12, 28, 72, 0.66) 46%, rgba(12, 28, 72, 0.18)),
-    linear-gradient(0deg, rgba(8, 17, 49, 0.58), rgba(8, 17, 49, 0.06) 36%);
+    linear-gradient(90deg, rgba(8, 26, 22, 0.88), rgba(8, 26, 22, 0.58) 42%, rgba(8, 26, 22, 0.12)),
+    linear-gradient(0deg, rgba(8, 26, 22, 0.58), rgba(8, 26, 22, 0.06) 34%);
 }
 
 .hero-content {
@@ -145,11 +144,11 @@ h1 {
 
 .primary {
   color: var(--white);
-  background: var(--green);
+  background: var(--blue);
 }
 
 .primary:hover {
-  background: #056f55;
+  background: var(--accent-strong);
 }
 
 .secondary {
